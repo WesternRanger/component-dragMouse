@@ -5,6 +5,6 @@
 
 >（2）实现弹出层效果，其余部分半透明遮罩，点击半透明部分，弹出层消失；
 
->（3）resize（）的用法，document.documentElement.clientWidth;的用法；
+>（3）onresize（）的用法，document.documentElement.clientWidth;的用法；
 
 >（4）用脚本实现dom元素居中的函数。
