@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/ie.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <div class="link">
+        <a id="log" href="javascript:showDialog();">登录</a>
+    </div>
+    <div class="ui-mask" id="mask" onselectstart="return false"></div>
+    <!--框-->
+    <div class="ui-dialog" id="dialogMove" onselectstart='return false;'>
+        <!--title-->
+        <div class="ui-dialog-title" id="dialogDrag"  onselectstart="return false;" >
+            登录通行证
+            <a id="close" class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+        </div>
+        <!--title结束-->
+        <!--dialog content开始-->
+        <div class="ui-dialog-content">
+            <div class="ui-dialog-l40 ui-dialog-pt15">
+                <input class="ui-dialog-input ui-dialog-input-username" type="input" value="手机/邮箱/用户名" />
+            </div>
+            <div class="ui-dialog-l40 ui-dialog-pt15">
+                <input class="ui-dialog-input ui-dialog-input-password" type="input" value="密码" />
+            </div>
+            <div class="ui-dialog-l40">
+                <a href="#">忘记密码</a>
+            </div>
+            <div>
+                <a class="ui-dialog-submit" href="#" >登录</a>
+            </div>
+            <div class="ui-dialog-l40">
+                <a href="#">立即注册</a>
+            </div>
+        </div>
+        <!--dialog content结束-->
+    </div>
+</body>
+</html>
