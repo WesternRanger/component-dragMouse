@@ -20,7 +20,34 @@
            你自定义的内容
         </div>
     </div>
+然后需要初始化样式，因为mask遮罩层和dialogMove弹出层初始化的时候需要隐藏的。而且mask弹出后需要充满整个屏幕。所以为了能正常使用组件，要设计基本的样式：
+
+		#dialogMove{
+			width:380px;
+	        height:auto;
+	        position:absolute;
+	        z-index:10;
+	        background: #fff;
+	        display: none;
+		}
+		#mask{
+			background: #000;
+	        position: absolute;
+	        top: 0px;
+	        left:0px;
+	        opacity:0.4;
+	        filter: Alpha(opacity=40);
+	        display: none;
+		}
+
+
+调用组件之前先引入组件的链接。
+
+	<script src="js/drag.js"></script>。
+
+具体路径自己根据情况改写。
 在页面的底部的script标签内写上如下脚本，来调用组件，这之中的id名字要跟上述页面中的id名字对应起来。
+
 
 	var translate = {
             //以下传入的值均为id
