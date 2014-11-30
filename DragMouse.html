@@ -4,7 +4,6 @@
     <title></title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheets/ie.css">
-	<script src="js/script.js"></script>
 </head>
 <body>
     <div class="link">
@@ -39,5 +38,19 @@
         </div>
         <!--dialog content结束-->
     </div>
+    <script src="js/script.js"></script>
+    <script>
+        document.onselectstart = new Function('event.returnValue=false;');
+
+        var translate = {
+            //以下传入的值均为id
+            title : 'dialogDrag',//鼠标要拖拽的标题栏
+            box:'dialogMove',//被拖动体
+            mask:'mask',//半透明遮罩层
+            open:'log',//调出浮层的触发按钮
+            close:'close'//关闭浮层的按钮
+        }
+        drag(translate);
+    </script>
 </body>
 </html>
